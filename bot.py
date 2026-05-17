@@ -15,7 +15,7 @@ OWNER = "Rashitkxodjaeva Zuxra"
 
 logging.basicConfig(level=logging.INFO)
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-1.5-flash-8b")
 balances = {}
 pending = {}
 history = {}
