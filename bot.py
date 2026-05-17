@@ -225,7 +225,7 @@ async def photo(u, c):
     except Exception as e:
         logging.error(e)
         balances[uid] = balances.get(uid,0)+1
-       await msg.edit_text(str(e))
+        await msg.edit_text(str(e))
 async def admin_dec(u, c):
     q = u.callback_query
     if u.effective_user.id != ADMIN_CHAT_ID:
